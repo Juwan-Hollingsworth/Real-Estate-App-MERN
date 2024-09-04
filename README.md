@@ -1,3 +1,3 @@
 
 
-![App Architecture](architecture/Application-Architecture.png)
+![App Architecture](architecture/Application_Architecture.png)
