@@ -5,20 +5,18 @@ import postRoute from "./routes/post.route.js"
 const app = express();
 const port = 8800
 
+app.use(express.json())
+
 //API ENDPOINTS
 app.use("/api/test", (req,res)=>{
 res.send("It works!")
-
 })
-app.use("/api/posts/", postRoute
-    
+app.use("/api/posts", postRoute 
     )
-app.use("/api/auth/", authRoute
-    
+app.use("/api/auth", authRoute
     )
 
     
-
 
 
 app.listen(port, ()=>{

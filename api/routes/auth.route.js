@@ -4,7 +4,7 @@ const router = express.Router()
 
 // These will all be post requests because we will be getting information from the end user
 
-router.get("/register", register)
+router.post("/register", register)
 router.post("/login", login)
 router.post("/logout", logout)
 
