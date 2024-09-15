@@ -15,11 +15,12 @@ datasource db {
 
 
 //create user model 
+//unique id of user model, create user by default, when we create a doc by defualt it will create an idobject that connects to the id using map
 model User {
   id String @id @default(auto()) @map("_id") @db.ObjectId
-  email String
-  username String
-  passowrd String
-  avatar String
-  createdAt DateTime
+  email String @unique
+  username String @unique
+  password String
+  avatar String?
+  createdAt DateTime @default(now())
 }

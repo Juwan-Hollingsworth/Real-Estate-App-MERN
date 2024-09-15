@@ -1,6 +1,8 @@
 import express from "express"
 const router = express.Router()
 
+
+// main structure of app functionality
 router.get("/test", (req,res)=>{
     console.log("Router works")
 })
